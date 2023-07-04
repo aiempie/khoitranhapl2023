@@ -1,0 +1,191 @@
+.font-main {
+  font-size: 18px;
+  color: #866d6b;
+  position: absolute;
+  left: 12%;
+  top: 0%;
+  margin-top: 10px;
+}
+.font-box {
+  background: url(../images/countdown.png) no-repeat center;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 50px;
+}
+div[data-order="0"] {
+  background: url(../images/qua/nakroth-thu-nguyen-ve-than.jpg) no-repeat;
+  background-size: 100% 100%;
+  width: 25%;
+  height: 44%;
+  position: absolute;
+  top: 18%;
+  left: 7.5%;
+}
+
+div[data-order="1"],
+div[data-order="2"],
+div[data-order="3"],
+div[data-order="4"],
+div[data-order="5"],
+div[data-order="6"] {
+  background: url(../images/bg-prizes.png) no-repeat;
+  background-size: 100% 100%;
+  width: 16%;
+  height: 20%;
+  position: absolute;
+  overflow: hidden;
+}
+div[data-order="1"] img,
+div[data-order="2"] img,
+div[data-order="3"] img,
+div[data-order="4"] img,
+div[data-order="5"] img,
+div[data-order="6"] img {
+  object-fit: fill;
+  max-height: 58px;
+  width: 96%;
+  height: 96%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+div[data-order="1"] {
+  top: 18%;
+  left: 37.5%;
+}
+
+div[data-order="2"] {
+  top: 18%;
+  left: 56.5%;
+}
+
+div[data-order="3"] {
+  top: 18%;
+  left: 76.5%;
+}
+
+div[data-order="4"] {
+  top: 41%;
+  left: 37.5%;
+}
+
+div[data-order="5"] {
+  top: 41%;
+  left: 56.5%;
+}
+
+div[data-order="6"] {
+  top: 41%;
+  left: 76.5%;
+}
+
+button[onclick="open_about()"] {
+  background: url(../images/bg-prompt-btn.png) no-repeat center;
+  background-size: 100% 100%;
+  width: 35%;
+  height: 15%;
+  border: none;
+  position: absolute;
+  top: 75%;
+  left: 7%;
+  font-family: "Baloo 2", cursive;
+  font-weight: 500;
+  color: #312525;
+}
+
+button#draw {
+  background: url(../images/bg-prompt-btn.png) no-repeat center;
+  background-size: 100% 100%;
+  width: 35%;
+  height: 15%;
+  border: none;
+  position: absolute;
+  top: 75%;
+  right: 7%;
+  font-family: "Baloo 2", cursive;
+  font-weight: 500;
+  color: #312525;
+}
+
+#draw,
+#rule {
+  cursor: pointer;
+}
+.store {
+  text-align: center;
+  border: none;
+  height: 30px;
+  width: 100%;
+  margin-top: 10px;
+}
+.items {
+  background: url(../images/bg-exchange-item.png) no-repeat center;
+  background-size: 100% 100%;
+  height: 18%;
+  width: 100%;
+  margin-top: 5px;
+}
+.items-img {
+  position: relative;
+  left: 5%;
+  margin-top: 2%;
+  width: 9%;
+}
+.items-text {
+  position: absolute;
+  left: 5%;
+  color: white;
+}
+.items-arrow {
+  position: relative;
+  left: 12%;
+  top: 5%;
+}
+.bg-prices {
+  background: url(../images/bg-prizes.png) no-repeat center;
+  background-size: 100% 100%;
+  width: 16%;
+  height: 6.5%;
+  position: absolute;
+  left: 32%;
+  margin-top: -8.5%;
+}
+.bg-prices .first-img {
+  width: 80%;
+  margin-top: 20%;
+  margin-left: 10%;
+}
+.bg-prices .last-img {
+  width: 80%;
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+}
+.bg-prices .text-price {
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  line-height: 10px;
+  color: #ec544d;
+}
+.change {
+  position: absolute;
+  right: 5%;
+  margin-top: 3%;
+  width: 23%;
+}
+.btn-change {
+  position: absolute;
+  right: -3%;
+  margin-top: -6%;
+  width: 23%;
+  color: #882521;
+  cursor: pointer;
+}
+.info-change {
+  position: absolute;
+  right: -2%;
+  margin-top: 1%;
+  width: 23%;
+  color: #fff;
+}

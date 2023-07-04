@@ -1,0 +1,53 @@
+.topbar {
+  background: var(--main-bg-color);
+  border-bottom: 0.01rem solid var(--line-color);
+}
+
+.container {
+  padding: 0.2rem 0.4rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 1.6rem;
+  height: 0.45rem;
+}
+
+.lang {
+  max-width: 0.4rem;
+  padding: 0 0.4rem 0 0;
+  overflow: hidden;
+  background: url(../images/global.svg) right center/contain no-repeat;
+  border: none;
+  color: transparent;
+  font-size: 0.24rem;
+  line-height: 0.4rem;
+  text-align: right;
+}
+
+.dark .lang {
+  background-image: url(../images/global.svg);
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 0.15rem 1.5rem;
+  }
+
+  .logo img {
+    width: 1.18rem;
+    height: 0.34rem;
+  }
+
+  .lang {
+    width: auto;
+    max-width: none;
+    padding-right: 0.32rem;
+    font-size: 0.12rem;
+    line-height: 0.24rem;
+    color: var(--text-2-color);
+  }
+}

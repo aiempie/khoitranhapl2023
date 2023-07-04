@@ -1,0 +1,843 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&amp;display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+
+@font-face {
+  font-family: "nvnFont";
+  font-style: normal;
+  font-weight: 700;
+  src: url(fonts/nvn.woff2) format("woff2"), url(fonts/nvn.html) format("woff"),
+    url(fonts/nvn-2.html) format("truetype");
+}
+body {
+  background: url(../images/bg.jpg) center / cover no-repeat;
+
+  margin: 0;
+  font-family: "Baloo 2", cursive;
+}
+main {
+  display: block;
+  text-align: -webkit-center;
+}
+.container {
+  background: url(../images/background-img.jpg) no-repeat center;
+  background-size: 100% 100%;
+  position: relative;
+  margin: 0px auto;
+  max-width: 400px;
+  height: auto;
+  border: 1px solid #fff;
+  margin-top: -10px;
+}
+
+.landing {
+  width: 100%;
+  height: auto;
+}
+.event-wrapper {
+  width: 100%;
+  margin-bottom: 100%;
+  padding: 10px;
+}
+.header video {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: -8px;
+  display: block;
+}
+.event-wrapper img:nth-child(1) {
+  width: 130px;
+  float: right;
+}
+.event-notify {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+  display: block;
+}
+.event-notify-title {
+  padding-bottom: 10px;
+  color: #fff;
+  font-size: 17px;
+  font-family: "Baloo 2", cursive;
+  text-align: left;
+  text-decoration: underline;
+}
+.event-notify-content {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Baloo 2", cursive;
+  text-align: left;
+  line-height: 18px;
+}
+.event-btn {
+  background: transparent;
+  width: auto;
+  height: auto;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  padding: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #eaa300;
+  font-size: 17px;
+  font-family: "Baloo 2", cursive;
+  text-align: center;
+  border: 1px solid #eaa300;
+  outline: none;
+  display: block;
+}
+.box {
+  width: 95%;
+  height: auto;
+  margin-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12px;
+  position: relative;
+  border-radius: 5px;
+  display: block;
+}
+.event-alert {
+  background: url(../images/items.png) no-repeat center center;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 55px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  border-left: 1px solid rgba(0, 0, 0, 0.5);
+  display: block;
+  border-radius: 4px;
+}
+.event-alert img {
+  width: 12%;
+  margin-right: 7px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  float: left;
+}
+.event-alert-title {
+  color: #1e1414e0;
+  font-size: 17px;
+  font-family: "Baloo 2", cursive;
+  text-align: left;
+}
+.event-alert-desc {
+  color: #1e1414e0;
+  font-size: 16px;
+  font-family: "Baloo 2", cursive;
+  text-align: left;
+  line-height: 15px;
+}
+.shagitz-active {
+  border: 2px solid white;
+}
+.br {
+  height: 11px;
+}
+.menu-wrapper {
+  width: 40%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.inbox {
+  background: url(../images/bg-drawbox.png) no-repeat center;
+  background-size: 100% 100%;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-top: 11px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.footer {
+  background: #131313;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+.footer-txt-follow {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 17px;
+  font-family: "Baloo 2", cursive;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.footer-follow-icon {
+  width: 300px;
+  height: 90px;
+  margin: 5px;
+  display: inline-block;
+}
+.footer-txt-copyright {
+  color: #fff;
+  font-size: 15px;
+  font-family: "Baloo 2", cursive;
+  text-align: center;
+}
+.footer-copyright-icon {
+  width: 90%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  display: block;
+}
+.popup {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.popup-box {
+  background: url(../images/bg-pop.a184bb41.png) no-repeat center;
+  background-size: 100% 100%;
+  width: 380px;
+  height: 220px;
+  position: relative;
+  margin: 50px auto;
+  margin-top: 16%;
+  text-align: center;
+}
+.popup-title {
+  background: url(../images/bg-selection-act.png);
+  background-size: 100% 100%;
+  width: 100%;
+  line-height: 30px;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Baloo 2", cursive;
+  text-align: left;
+}
+.popup-content {
+  width: 100%;
+  height: 65.5%;
+  border: 1px solid transparent;
+  position: relative;
+}
+.popup-rewards-title {
+  color: #000;
+  font-size: 20px;
+  font-family: "Baloo 2", cursive;
+  text-align: center;
+}
+.popup-rewards-img1 {
+  width: 90px;
+  height: 90px;
+  margin: 5px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.popup-btn-wrapper {
+  width: 100%;
+  height: 50px;
+}
+.popup-btn-wrapper button {
+  background: url(../images/bg-prompt-btn.png) no-repeat center;
+  background-size: 100% 100%;
+  width: 40%;
+  height: 40px;
+  padding: 2px;
+  font-size: 18px;
+  font-family: "Baloo 2", cursive;
+  color: #fff;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+.btn-login {
+  width: 95%;
+  height: auto;
+  padding: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #000;
+  font-size: 15px;
+  font-family: "Baloo 2", cursive;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  display: block;
+}
+.btn-login i {
+  color: #fff;
+  font-size: 20px;
+  float: left;
+}
+.facebook {
+  background: #3b5998;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 3px;
+}
+.twitter {
+  background: #08a0e9;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.popup-close {
+  width: 20px;
+  height: 20px;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  display: block;
+}
+.popup-close i {
+  color: #000;
+  font-size: 25px;
+}
+.popup-login {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.popup-box-login-fb {
+  background: #eceff6;
+  max-width: 330px;
+  height: auto;
+  position: relative;
+  margin: 50px auto;
+  margin-top: 1.9%;
+  text-align: center;
+  font-family: "Teko";
+  color: #000;
+  border-radius: 10px;
+}
+.popup-box-login-twitter {
+  background: #fff;
+  max-width: 330px;
+  height: 380px;
+  position: relative;
+  margin: 50px auto;
+  margin-top: 10%;
+  text-align: center;
+  font-family: "Teko";
+  color: #000;
+  border-radius: 10px;
+}
+.close-fb {
+  background: #000;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  border: 1.5px solid #fff;
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  display: block;
+}
+.close-fb i {
+  color: #fff;
+  padding-top: 1px;
+}
+.close-other {
+  background: #000;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  border: 1.5px solid #fff;
+  top: -8px;
+  right: -10px;
+  position: absolute;
+  z-index: 9999999;
+  display: block;
+}
+.close-other i {
+  color: #fff;
+  padding-top: 1px;
+}
+.verify-input {
+  background: url(../images/bg-pop.a184bb41.png) no-repeat center;
+  background-size: 100% 100%;
+  width: 94.3%;
+  height: auto;
+  margin-bottom: 3px;
+  padding: 6px;
+  color: #fff;
+  font-size: 15px;
+  font-family: "Baloo 2", cursive;
+  border: none;
+  position: relative;
+  outline: none;
+}
+.verify-input::placeholder {
+  color: #fff;
+}
+.verify-select {
+  background: url(../images/bg-pop.a184bb41.png) no-repeat center;
+  background-size: 100% 100%;
+  width: 94.3%;
+  height: auto;
+  margin-bottom: 3px;
+  padding: 6px;
+  padding-left: 3px;
+  color: #fff;
+  font-size: 15px;
+  font-family: "Baloo 2", cursive;
+  border: none;
+  position: relative;
+  outline: none;
+}
+.verify-btn {
+  background: url(../images/bg-prompt-btn.png) no-repeat center;
+  background-size: 100% 100%;
+  width: 35%;
+  height: auto;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 15px;
+  font-family: "Baloo 2", cursive;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 3px;
+  border: none;
+  position: relative;
+  outline: none;
+}
+.kanan {
+  float: right;
+}
+.kiri {
+  float: left;
+}
+.tengah {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+::-webkit-scrollbar {
+  display: none;
+  width: 0px;
+}
+.header {
+  max-width: 400px;
+  height: 210px;
+  margin: 0px;
+}
+.item div {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px 3px 0px 0px;
+}
+.item div:first-child {
+  margin-left: 0;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.lightshagitz figure {
+  position: relative;
+}
+.lightshagitz figure::before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
+.lightshagitz figure::before {
+  -webkit-animation: shine 2s infinite;
+  animation: shine 2s infinite;
+}
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: none;
+    border-top: 1px solid #fff;
+    border-radius: 0px;
+    padding: 0px;
+    margin-top: -8px;
+  }
+
+  .box {
+    width: 96%;
+    height: auto;
+  }
+  .item {
+    height: 90px;
+  }
+  .popup-box {
+    width: 345px;
+    margin-top: 60%;
+  }
+  .popup-item {
+    width: 25%;
+    height: 85px;
+  }
+  .popup-box-login-fb {
+    margin-top: 4%;
+  }
+  .popup-box-login-twitter {
+    margin-top: 25%;
+  }
+  .header {
+    width: 100%;
+  }
+}
+.navbar-fb {
+  background: #3b5998;
+  width: 100%;
+  height: auto;
+  padding: 8px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.navbar-fb img {
+  width: 115px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.fb-alert {
+  background: #fa3e3e;
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  color: #fff;
+  font-size: 15px;
+  font-family: Roboto;
+  text-align: left;
+}
+.content-box-fb {
+  width: 300px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.content-box-fb img {
+  width: 60px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  display: block;
+}
+.txt-login-fb {
+  width: 270px;
+  height: auto;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 17px;
+  padding: 8px;
+  color: #90949c;
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  display: block;
+}
+.loginEmail {
+  width: 100%;
+  height: auto;
+  padding: 12px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Roboto, sans-serif;
+  border: 1px solid #bdbebf;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+.loginPassword {
+  width: 100%;
+  height: auto;
+  padding: 12px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Roboto, sans-serif;
+  border: 1px solid #bdbebf;
+  border-top: 0px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+.showHide {
+  margin-top: -32px;
+  padding-right: 8px;
+  color: #333333;
+  font-size: 12px;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  text-align: right;
+  text-transform: uppercase;
+}
+.btn-login-fb {
+  background: #1778f2;
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 0px rgba(0, 0, 0, 0.3);
+  border: 1px solid #3578e5;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  outline: none;
+  display: block;
+}
+.txt-create-account {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  color: #3b5998;
+  font-size: 13.5px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+}
+.txt-not-now {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  color: #3b5998;
+  font-size: 13.5px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+}
+.txt-forgotten-password {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  padding: 5px;
+  color: #7596c8;
+  font-size: 13.5px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+}
+.language-box {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.language-name {
+  width: 40%;
+  height: auto;
+  margin: 5px;
+  margin-bottom: 0px;
+  color: #3b5998;
+  font-size: 12px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  display: inline-block;
+}
+.language-name i {
+  width: 23px;
+  padding: 4px;
+  color: #90949c;
+  border: 1px solid #3b5998;
+  border-radius: 3px;
+}
+.language-name-active {
+  color: #90949c;
+  font-weight: bold;
+}
+.copyright {
+  width: 40%;
+  height: auto;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #90949c;
+  font-size: 12px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  display: block;
+}
+.header-twitter {
+  background: #fff;
+  width: 100%;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+  position: relative;
+  border-radius: 10px;
+}
+.header-twitter img {
+  width: 55px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.box-twitter {
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  overflow: none;
+  font-size: 15px;
+  font-family: sans-serif;
+  border-radius: 10px;
+}
+.txt-login-twitter {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: arial, sans-serif;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.twitter-alert {
+  width: 95%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  color: #fa3e3e;
+  font-size: 13px;
+  font-family: arial, sans-serif;
+  text-align: left;
+  display: block;
+}
+.input-box-twitter {
+  background: #f5f8fa;
+  width: 90%;
+  height: 55px;
+  margin-top: 10px;
+  margin-bottom: 18px;
+  padding: 10px;
+  padding-top: 5px;
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  text-align: left;
+  position: relative;
+  border-bottom: 2px solid #657786;
+  border-radius: 2px;
+  outline: none;
+  position: relative;
+}
+.input-box-twitter label {
+  color: #657786;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: none;
+}
+.input-box-twitter input {
+  background: transparent;
+  width: 100%;
+  height: auto;
+  padding: 7px;
+  padding-top: 3px;
+  padding-left: 0px;
+  color: #000;
+  font-size: 18px;
+  font-family: arial, sans-serif;
+  text-align: left;
+  position: relative;
+  border: none;
+  outline: none;
+  z-index: 2;
+}
+.input-box-twitter .TwitterShowHide {
+  margin-top: 10px;
+  color: #333333;
+  float: right;
+}
+.btn-login-twitter {
+  background: #1da1f2;
+  width: 90%;
+  height: auto;
+  padding: 14px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: arial, sans-serif;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  letter-spacing: 1;
+}
+.footer-menu-twitter {
+  width: auto;
+  height: auto;
+  margin: 0.5%;
+  margin-top: 7%;
+  color: #1da1f2;
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  display: inline-block;
+}
+.bulet {
+  color: #000;
+  font-size: 8px;
+}
+.aktifnya {
+  color: #1da1f2;
+  border-bottom: 2px solid #1da1f2;
+}
