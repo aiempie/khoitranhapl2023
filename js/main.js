@@ -1,11 +1,11 @@
 const hadiah = {
-  0: "/images/qua/nakroth-thu-nguyen-ve-than.jpg",
-  1: "/images/qua/skin-ngau-nhien.jpeg",
-  2: "/images/qua/ruong-chon-skin.jpeg",
-  3: "/images/qua/dieu-nhay-ngau-nhien.jpeg",
-  4: "/images/qua/airi-kiamono.png",
-  5: "/images/qua/dieu-thuyet-tbb.png",
-  6: "/images/qua/yorn-nguyet-toc.png",
+  0: "./images/qua/nakroth-thu-nguyen-ve-than.jpg",
+  1: "./images/qua/skin-ngau-nhien.jpeg",
+  2: "./images/qua/ruong-chon-skin.jpeg",
+  3: "./images/qua/dieu-nhay-ngau-nhien.jpeg",
+  4: "./images/qua/airi-kiamono.png",
+  5: "./images/qua/dieu-thuyet-tbb.png",
+  6: "./images/qua/yorn-nguyet-toc.png",
 };
 
 const jumlah = 7;
